@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Web Server Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #b198d6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #090909;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Go Web Server Project</h1>
+    <p>A beginner-friendly project that demonstrates how to build a web server using Golang.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Project Overview</h2>
+        <p>This project is a simple web server built using the Go programming language. The web server serves static HTML files and handles multiple HTTP routes, demonstrating how a web server interacts with client requests like <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code>.</p>
+    </section>
+
+    <section>
+        <h2>Features</h2>
+        <ul>
+            <li>Serves static HTML files, such as <code>index.html</code> and <code>form.html</code></li>
+            <li>Handles HTTP GET requests to serve a "Hello" message</li>
+            <li>Handles HTTP POST requests to submit and display form data</li>
+            <li>Supports HTTP PUT requests to update user information</li>
+            <li>Supports HTTP DELETE requests to remove user information</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How It Works</h2>
+        <p>The project consists of a Go web server that listens on port 8080. It serves static files from the <code>./static</code> directory and processes requests based on the route:</p>
+        <ul>
+            <li><code>/hello</code>: A <strong>GET</strong> route that responds with "Hello, welcome!"</li>
+            <li><code>/form</code>: A <strong>POST</strong> route that accepts form submissions and prints the user's name and address</li>
+            <li><code>/update</code>: A <strong>PUT</strong> route that updates user information</li>
+            <li><code>/delete</code>: A <strong>DELETE</strong> route that removes a user</li>
+        </ul>
+        <p>Each request is handled by specific handler functions in the <code>main.go</code> file, which processes the request and sends an appropriate response back to the client.</p>
+    </section>
+
+    <section>
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>Go Language (Golang):</strong> The primary programming language used for building the web server.</li>
+            <li><strong>HTML5:</strong> Used for creating static web pages (e.g., <code>index.html</code> and <code>form.html</code>).</li>
+            <li><strong>HTTP:</strong> Protocol used to handle GET, POST, PUT, and DELETE requests between the client and server.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Folder Structure</h2>
+        <ul>
+            <li><code>go-server/</code>: The main project directory containing all the files.</li>
+            <li><code>main.go</code>: The main Go file where the server is defined and routes are handled.</li>
+            <li><code>static/</code>: Directory containing static HTML files.</li>
+            <ul>
+                <li><code>index.html</code>: The main landing page of the website (this file).</li>
+                <li><code>form.html</code>: The form used to submit data via a POST request.</li>
+            </ul>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to Run the Project</h2>
+        <p>Follow these steps to run the project on your local machine:</p>
+        <ol>
+            <li>Make sure you have Go installed on your system.</li>
+            <li>Navigate to the project directory:</li>
+            <pre><code>cd go-server</code></pre>
+            <li>Run the web server using the command:</li>
+            <pre><code>go run main.go</code></pre>
+            <li>Open your browser and go to <code>http://localhost:8080</code> to access the site.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Future Improvements</h2>
+        <ul>
+            <li>Add user authentication and session management.</li>
+            <li>Store user data in a database like SQLite or PostgreSQL.</li>
+            <li>Implement a front-end framework like React for more dynamic UI.</li>
+        </ul>
+    </section>
+</main>
+
+<!-- <footer>
+    <p>&copy; 2024 My Go Web Server Project. All rights reserved.</p>
+</footer> -->
+
+</body>
+</html>
