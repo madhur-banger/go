@@ -7,5 +7,6 @@ Expect to gain hands-on experience with:
 - Managing multiple tasks at once 🌀
 - Securing applications and handling real-world challenges 🔐
 - Building scalable, high-performance systems ⚡ …and so much more!
- ## Why Go? Go, or Golang, is renowned for its simplicity, speed, and reliability. Whether you're working on web development, networking, or system programming, Go’s minimalistic design and performance make it the ideal choice for modern development. 🌍 
+ ## Why Go? 
+ ##Go, or Golang, is renowned for its simplicity, speed, and reliability. Whether you're working on web development, networking, or system programming, Go’s minimalistic design and performance make it the ideal choice for modern development. 🌍 
  ## Get Ready This repository is all about practice! Each section will introduce you to key concepts with interactive examples, challenges, and projects. By the end, you'll not only understand Go, but you’ll also feel empowered to use it in your own projects. Feel free to clone this repository and start coding. The best way to learn Go is to write Go! ✍️
